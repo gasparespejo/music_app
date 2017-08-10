@@ -7,13 +7,14 @@
 
 <p>
   <strong>Genre:</strong>
-  <%= @song.genre_id %>
+  <%= @song.genre.name %>
 </p>
 
 <p>
   <strong>Artist:</strong>
-  <%= @song.artist_id %>
+  <%= @song.artist.name %>
 </p>
 
 <%= link_to 'Edit', edit_song_path(@song) %> |
-<%= link_to 'Back', songs_path %>
+<%= link_to 'Back', songs_path %> |
+<%= link_to 'New Song', new_song_path %>
